@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: table;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.column1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+    position: relative;
+    /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+    float: right;
+    width: 70%;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.resume {
+    background-color: rgb(10, 43, 43);
+}
+
+.contact {
+    background-color: cadetblue
+}
+
+.aboutMe_left {
+    float: left;
+    width: 60%;
+    padding: 15px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+.aboutMe_right {
+    float: left;
+    width: 40%;
+    padding: 15px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+.edu_left {
+    float: left;
+    width: 30%;
+    padding: 20px 10px 0px 5px;
+    height: 150px;
+    background-color: rgb(218, 208, 208);
+    /* Should be removed. Only for demonstration */
+}
+
+.edu_right {
+    float: right;
+    width: 70%;
+    padding: 25px 10px 0px 15px;
+    height: 150px;
+    /* Should be removed. Only for demonstration */
+}
+
+.contact_top {
+    float: top;
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    /* Should be removed. Only for demonstration */
+}
+
+.contact_left {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(193, 27, 27);
+    /* Should be removed. Only for demonstration */
+}
+
+.contact_middle {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+}
+
+.contact_right {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    /* Should be removed. Only for demonstration */
+}
+
+.container {
+    height: 700px;
+    width: 100%;
+    font-size: 0
+}
+
+.contact_left,
+.contact_middle,
+.contact_right {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+    height: 850px;
+}
+
+.invalid {
+    border: 1px solid red;
+}
